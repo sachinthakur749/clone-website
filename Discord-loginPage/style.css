@@ -1,0 +1,253 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+:root{
+
+    --bg_accent : #36393F;
+    --text_accent : #76777B;
+    /* --link_color : #226c8d; */
+    --link_color : #177ea7;
+    --btn-color : #5865f2;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* border: 1px solid red; */
+    background-image: url('bg.png');
+}
+
+.wrapper .left  {
+    width: 60%;
+}
+.wrapper .right  {
+    width: 40%;
+}
+
+
+.wrapper{
+    /* border: 1px solid green; */
+    display: flex;
+    background-color: var(--bg_accent) ;
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+    width: 900px;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    margin: 50px;
+}
+
+.wrapper .left .title{
+    font-size: 2rem ;
+    font-weight: 400;
+    color: #F2F3F4;
+
+}
+
+
+
+.wrapper .left .sub-title{
+    font-size: 1rem ;
+    color: var(--text_accent);
+    margin-bottom: 20px;
+}
+
+
+.wrapper .left .username,
+.wrapper .left .password{
+    color: var(--text_accent);
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    
+}
+
+.wrapper .left .username label,
+.wrapper .left .password label{
+    margin-bottom: 5px;
+}
+
+.wrapper .left .username input,
+.wrapper .left .password input{
+    background-color: #303339;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    height: 40px;
+    width:80% ;
+    color : var(--text_accent);
+    font-size: 1rem;
+}
+
+
+.wrapper .left .username input:focus{
+    border: 1px solid var(--link_color);
+
+}
+.wrapper .left .password input:focus{
+    border: 1px solid var(--link_color);
+
+}
+
+
+
+.wrapper .left .forgot-pass a,
+.wrapper .left .register-link a{
+    color: var(--link_color);
+    text-decoration: none;
+    font-size: .90rem;
+}
+
+.wrapper .left .forgot-pass{
+    margin-top: 0px;
+}
+
+
+
+.wrapper .left .register-link {
+    display: flex;
+}
+
+.wrapper .left .login-btn .btn{
+    margin: 30px 0 0 0 ;
+    width: 80%;
+    height: 45px;
+    font-size: 1.5rem;
+    /* font-weight: 500; */
+    color: #F2F3F4;
+    background-color: var(--btn-color);
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+
+}
+
+.wrapper .left .login-btn .btn:hover{
+    background-color: #5460e6;
+    color: #d0d1d1; 
+    
+}
+
+.wrapper .left .register-link .text{
+    color: var(--text_accent);
+}
+
+.wrapper .left .register-link {
+    margin: 8px 0;
+    font-size: .90rem;
+}
+
+.wrapper .right{
+    /* border: 1px solid green; */
+    position: relative;
+    transition: all 0.3s ease;
+    
+    
+}
+
+
+.wrapper .right .image{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40px;
+    height: 200px;
+    width: 200px;
+    /* border: 1px solid blue; */
+    background-image: url('qr.png') ;
+    background-position: center;
+    background-size: contain;
+    border-radius: 5px;
+    background-position-x:1px;
+   
+    
+}
+
+.wrapper .right .qr-tag{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    /* color: #F2F3F4; */
+    color: #f2f2f2;
+    padding-left: 11px;
+    /* border: 1px solid red; */
+    
+    
+    
+}
+
+.wrapper .right .text{
+    text-align: center;
+    color: var(--text_accent);
+    margin-top: 5px;
+    /* border: 1px solid red; */
+    width: 300px;
+    position: absolute;
+    left: -8%;
+}
+
+
+.wrapper .right .text span{
+    color:  #8a8c90;
+    font-weight: 700;
+}
+
+
+.wrapper .container{
+    position: absolute;
+    justify-content: center;
+    top: 68%;
+    width: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* margin-top: 6px; */
+    /* border: 1px solid red; */
+    
+}
+
+
+
+@media (max-width:750px) {
+    
+    .wrapper .right{
+        display: none;
+        
+    }
+
+    .wrapper {
+        width: 500px;
+    }
+
+    .wrapper .left{
+        width: 500px;
+        /* border: 1px solid red; */
+        justify-content: center;
+    }
+
+    .wrapper .left .username input {
+        width: 100%;
+    }
+    .wrapper .left .password input {
+        width: 100%;
+    }
+
+    .wrapper .left .login-btn .btn {
+        width: 100%;
+    }
+
+    .wrapper {
+        justify-content: center;
+        align-items: center;
+        /* padding:30px; */
+        margin: 50px;
+    }
+}

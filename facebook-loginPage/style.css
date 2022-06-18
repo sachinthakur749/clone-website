@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+:root{
+    --bg_color : #F0F2F5;
+    --loginBtn : #166fe5;
+    --crateBtn : #36a420;
+    --linkColor : #1877f4;
+}
+
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    background-color: var(--bg_color);
+}
+
+.wrapper{
+    position: relative;
+    /* border: 1px solid green; */
+    /* height: 800px; */
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.wrapper .left  {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 70px;
+    /* border: 1px solid red; */
+    transform: translateY(-50px);
+    
+}
+
+.wrapper .left .title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--loginBtn);
+    cursor: pointer;
+    
+}
+
+.wrapper .left .sub-title{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+.wrapper .right {
+    /* border: 1px solid orange; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height:auto;
+    /* height: auto; */
+    padding: 10px;
+    width:auto;
+    min-width: auto;
+    background-color: var();
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
+}
+
+.wrapper .right input{
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #dfdede;
+    outline: none;
+}
+
+.wrapper .right input:focus{
+    border: 1px solid var(--linkColor);
+}
+
+
+.wrapper .right .login-btn{
+    background-color: var(--loginBtn);
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    font-weight: 500;
+    padding: 8px 0;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.wrapper .right .login-btn:hover{
+   
+    
+    background-color:#166ad8 ;
+}
+
+
+.wrapper .right .forgot-pass a{
+     text-decoration: none;
+     color: var(--linkColor);
+}
+
+.wrapper .right .forgot-pass a:hover{
+     text-decoration: underline;
+}
+
+.wrapper .right .forgot-pass{
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: .80rem;
+    border-bottom: 1px solid #dfdede;
+   
+}
+
+.wrapper .right .create-btn{
+    padding: 8px;
+    background-color: var(--crateBtn);
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 80%;
+    margin : auto;
+    margin-bottom: 8px;
+}
+
+.wrapper .right .create-btn:hover{
+    background-color: #30921c;
+    cursor: pointer;
+}
+   
+
